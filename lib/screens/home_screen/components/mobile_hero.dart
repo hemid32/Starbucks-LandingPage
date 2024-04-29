@@ -28,20 +28,32 @@ class MobileHero extends StatelessWidget {
                 circleRadius: width * 0.35,
                 imageHeight: height * 0.6,
                 imageWidth: width * 0.38,
-                bottom: 50,
+                bottom: 0,
               ),
             ),
             const CappucinoTitle(),
             const SizedBox(height: 20.0),
+
             const AboutCappucino(),
-            const SizedBox(height: 20.0),
+            const SizedBox(height: 5.0),
+            SizedBox(
+              height: height * 0.6,
+              child: HeroImageTow(
+                circleRadius: width * 0.35,
+                imageHeight: height * 0.6,
+                imageWidth: width * 0.38,
+                bottom: 0,
+              ),
+            ),
+            const AboutCappucinoTow(),
+            const SizedBox(height: 5.0),
             const BuyNowButton(),
             const SizedBox(height: 10.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Text(
-                  "Only At",
+                  "فقط ب",
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 25.0,
@@ -53,6 +65,7 @@ class MobileHero extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20.0),
+            /*
             GridView.builder(
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -66,6 +79,8 @@ class MobileHero extends StatelessWidget {
               itemCount: servingItems.length,
               physics: const NeverScrollableScrollPhysics(),
             ),
+
+             */
           ],
         ),
       ),

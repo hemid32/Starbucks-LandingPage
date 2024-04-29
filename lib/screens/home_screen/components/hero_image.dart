@@ -22,7 +22,7 @@ class HeroImage extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: circleRadius,
-          backgroundColor: Colors.deepOrange.shade400,
+          backgroundColor: Colors.white,
         ),
         Positioned(
           bottom: bottom,
@@ -33,6 +33,28 @@ class HeroImage extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+class HeroImageTow extends StatelessWidget {
+  const HeroImageTow({
+    Key? key,
+    this.imageHeight = 380.0,
+    this.circleRadius = 180.0,
+    this.bottom = 50.0,
+    this.imageWidth,
+  }) : super(key: key);
+  final double imageHeight;
+  final double circleRadius;
+  final double bottom;
+  final double? imageWidth;
+  @override
+  Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context).size;
+    return Image.asset(
+      'assets/images/image3.jpeg',
+      height: imageHeight,
+      //width: imageWidth ?? mediaQuery.width * 0.25,
     );
   }
 }

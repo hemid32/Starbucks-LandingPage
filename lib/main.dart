@@ -14,12 +14,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.pink,
-        fontFamily: 'Poppins',
+        fontFamily: 'Santana',
       ),
-      home: const HomeScreen(),
+      home: const Directionality(
+          textDirection: TextDirection.rtl,
+          child: HomeScreen()),
     );
   }
 }

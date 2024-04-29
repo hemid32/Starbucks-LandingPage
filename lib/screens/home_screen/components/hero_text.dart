@@ -63,7 +63,7 @@ class CappucinoPrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AutoSizeText(
-      "\$8.60",
+      "230 ريال",
       style: TextStyle(
         color: Colors.black,
         fontSize: 30.0,
@@ -82,7 +82,44 @@ class AboutCappucino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AutoSizeText(
-      "The Midnight Mint Mocha Frappuccino features extra dark cocoa blended with Frappuccino Roast coffee.",
+      '''
+يريد المزيد والمزيد من الناس القيام بتدريبات القوة في المنزل ، بدلاً من صالة الألعاب الرياضية.
+
+لإنشاء "صالة ألعاب رياضية منزلية" صغيرة لنفسك ، فإنك تحتاج إلى بعض المواد الأساسية.
+
+واحدة من تلك الضروريات الأساسية هي مقعد اللياقة البدنية (القوي).
+
+
+
+      ''',
+      style: TextStyle(
+        color: Colors.black,
+        fontSize: 18.0,
+      ),
+    );
+  }
+}
+class AboutCappucinoTow extends StatelessWidget {
+  const AboutCappucinoTow({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AutoSizeText(
+      '''
+يوفر لك هذا المقعد التدريبي ، الذي يُطلق عليه أيضًا مقعد الأثقال ، الفرصة لأداء تمارين اللياقة البدنية الخاصة بك بطريقة آمنة.
+
+بفضل مقعد اللياقة ، ستتمكن من التدريب بفعالية وتحقيق أهداف لياقتك.
+
+لقد راجعت وأدرجت أفضل مقاعد اللياقة البدنية المنزلية لك.
+
+الأفضل بالطبع هو مقعد اللياقة المناسب لأغراض مختلفة.
+
+
+
+
+      ''',
       style: TextStyle(
         color: Colors.black,
         fontSize: 18.0,
@@ -99,7 +136,7 @@ class CappucinoTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AutoSizeText(
-      "Midnight\nFrappuccino",
+      "أفضل مقعد لياقة للمنزل  مراجعة أداة التدريب النهائية",
       maxLines: 2,
       style: TextStyle(
         color: Colors.black,
